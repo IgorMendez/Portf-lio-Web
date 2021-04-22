@@ -3,11 +3,10 @@ const body = document.querySelector('body')
 const mainContainer = document.querySelector('main')
 const menu = document.getElementById('menu')
 const buttonArray = [
-  'Currículo',
   'Sobre mim', 
   'Habilidades', 
   'Formação', 
-  'Experiência',
+  'Experiências',
   'Contatos',
 'Informações Gerais'
 ]

@@ -79,9 +79,82 @@ $success: #7952b3;
 //
 
 @import "icon-list";
+@import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap');
+@import "https://cdn.jsdelivr.net/npm/bulma@0.9.2/css/bulma.min.css";
 
 body {
-  padding: 3rem 1.5rem;
+  background-color: #221d1c;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.button:hover {
+  background-color: #424d50;
+  color: white;
+}
+
+* {
+  margin: 0px;
+}
+
+#header-section {
+  width: 100%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+#menu {
+  flex-wrap: wrap;
+  display: flex;
+  flex-direction: row;
+}
+
+#main {
+  margin: 0;
+  width: 70%;
+}
+
+#gif {
+  margin-top: 15px;
+  width: 600px;
+  height: 50%;
+  overflow: hidden;
+  margin-bottom: -550px;
+  align-self: flex-start;
+  object-fit: cover;
+  object-position: center;
+}
+
+#line {
+  display: flex;
+  height: 300px;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.menu-button {
+  margin: 10px;
+  font-family: 'Share Tech Mono', monospace;
+}
+
+#photo {
+  margin: 20px;
+  width: 200px;
+  border-radius: 100%;
+  box-shadow: rgb(0, 0, 0) 3px 3px 3px;
+}
+
+.button {
+  border-color: transparent;
+  box-shadow: rgb(0, 0, 0) 3px 3px 3px;
+  color: #9192a2;
+  background-color: #343d3f;
+  margin: 4px;
+  justify-content: space-between;
 }
 
 // Style Bootstrap icons
