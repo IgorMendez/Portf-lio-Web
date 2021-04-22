@@ -1,0 +1,199 @@
+// Override Bootstrap's Sass default variables
+//
+// Nearly all variables in Bootstrap are written with the `!default` flag.
+// This allows you to override the default values of those variables before
+// you import Bootstrap's source Sass files.
+//
+// Overriding the default variable values is the best way to customize your
+// CSS without writing _new_ styles. For example, change you can either change
+// `$body-color` or write more CSS that override's Bootstrap's CSS like so:
+// `body { color: red; }`.
+
+
+//
+// Bring in Bootstrap
+//
+
+// Option 1
+//
+// Import all of Bootstrap's CSS
+
+// @import "bootstrap/scss/bootstrap";
+
+// Option 2
+//
+// Place variable overrides first, then import just the styles you need. Note that some stylesheets are required no matter what.
+
+// Toggle global options
+$enable-gradients: true;
+$enable-shadows: true;
+
+// Customize some defaults
+$body-color: #333;
+$body-bg: #fff;
+$border-radius: .4rem;
+$success: #7952b3;
+
+@import "bootstrap/scss/functions"; // Required
+@import "bootstrap/scss/variables"; // Required
+@import "bootstrap/scss/mixins"; // Required
+
+@import "bootstrap/scss/root"; // Required
+@import "bootstrap/scss/reboot"; // Required
+@import "bootstrap/scss/type";
+// @import "bootstrap/scss/images";
+// @import "bootstrap/scss/code";
+@import "bootstrap/scss/grid";
+// @import "bootstrap/scss/tables";
+// @import "bootstrap/scss/forms";
+@import "bootstrap/scss/buttons";
+@import "bootstrap/scss/transitions";
+// @import "bootstrap/scss/dropdown";
+// @import "bootstrap/scss/button-group";
+// @import "bootstrap/scss/input-group"; // Requires forms
+// @import "bootstrap/scss/custom-forms";
+// @import "bootstrap/scss/nav";
+// @import "bootstrap/scss/navbar"; // Requires nav
+// @import "bootstrap/scss/card";
+// @import "bootstrap/scss/breadcrumb";
+// @import "bootstrap/scss/pagination";
+// @import "bootstrap/scss/badge";
+// @import "bootstrap/scss/jumbotron";
+// @import "bootstrap/scss/alert";
+// @import "bootstrap/scss/progress";
+// @import "bootstrap/scss/media";
+// @import "bootstrap/scss/list-group";
+@import "bootstrap/scss/close";
+// @import "bootstrap/scss/toasts";
+@import "bootstrap/scss/modal"; // Requires transitions
+// @import "bootstrap/scss/tooltip";
+// @import "bootstrap/scss/popover";
+// @import "bootstrap/scss/carousel";
+// @import "bootstrap/scss/spinners";
+@import "bootstrap/scss/utilities";
+// @import "bootstrap/scss/print";
+
+
+//
+// Custom styles
+//
+
+@import "icon-list";
+@import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap');
+@import "https://cdn.jsdelivr.net/npm/bulma@0.9.2/css/bulma.min.css";
+
+html {
+  height: 100%;
+}
+
+body {
+  background-color: #221d1c;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100%;
+}
+
+body::-webkit-scrollbar {
+  width: 10px;               /* width of the entire scrollbar */
+}
+
+body::-webkit-scrollbar-track {
+  background: #343d3f;        /* color of the tracking area */
+}
+
+// body::-webkit-scrollbar-thumb {
+//   background-color: blue;    /* color of the scroll thumb */
+//   border-radius: 20px;       /* roundness of the scroll thumb */
+//   border: 3px solid orange;  /* creates padding around scroll thumb */
+// }
+
+* {
+  margin: 0px;
+}
+
+#header-section {
+  width: 100%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+#main {
+  display: flex;
+  flex-direction: column;
+  align-items:center;
+  height: 100%;
+  margin: 0;
+}
+
+#menu {
+  flex-wrap: wrap;
+  display: flex;
+  flex-direction: row;
+}
+
+#gif {
+  margin-top: 15px;
+  width: 600px;
+  height: 50%;
+  overflow: hidden;
+  margin-bottom: -550px;
+  align-self: flex-start;
+  object-fit: cover;
+  object-position: center;
+}
+
+#main-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: 20px;
+}
+
+#image-container {
+  display: flex;
+  height: 300px;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.container-hidden {
+  display: none;
+}
+
+.menu-button , p , .list-group {
+  color: #bdbdc7;
+  margin: 10px;
+  font-family: 'Share Tech Mono', monospace;
+}
+
+.button:hover , .button:focus {
+  background-color: #424d50;
+  color: white;
+}
+
+#photo {
+  margin: 20px;
+  width: 200px;
+  border-radius: 100%;
+  box-shadow: rgb(0, 0, 0) 3px 3px 3px;
+}
+
+.button {
+  border-color: transparent;
+  box-shadow: rgb(0, 0, 0) 3px 3px 3px;
+  color: #9192a2;
+  background-color: #343d3f;
+  margin: 4px;
+  justify-content: space-between;
+}
+
+// Style Bootstrap icons
+.bi {
+  fill: currentColor;
+}

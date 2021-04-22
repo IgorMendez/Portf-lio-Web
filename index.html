@@ -1,53 +1,47 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Portfólio e Currículo</title>
+  <link rel="stylesheet" href="/bootstrap-npm-starter/assets/css/starter.css">
 </head>
-
 <body>
-    <header>
-        <h1 id="hero-title" class="title">Portfólio Web</h1>
-        <h2 class="title">Igor Mendes de Mattos Borges</h2>
-    </header>
-    <nav class="about-wrapper">
-        <ul class="about-list">
-            <li><a href="#photo" style="text-decoration:none">Foto</a></li>
-            <li><a href="#description" style="text-decoration:none">Sobre mim</a></li>
-            <li><a href="#skills" style="text-decoration:none">Habilidades</a></li>
-            <li><a href="#contacts" style="text-decoration:none">Contato</a></li>
-        </ul>
-    </nav>
-    
-    <main class="main-section">
-        <div class="selfie-block">
-            <img id="selfie-photo" src="https://avatars.githubusercontent.com/u/75589448?s=400&u=b3f141bd598b1c640dbcb9f928967cd069a9e406&v=4" alt="Foto perfil Igor Mendes" width=200px>      
-        </div>
-        <div class="desc-block">
-            <p id="description"><em>Me chamo Igor Mendes de Mattos Borges, sou Brasileiro e moro atualmente em <strong>Bauru interior de São Paulo</strong>. <br>Sou apaixonado por tecnologia e atualmente estudante de desenvolvimento web na Trybe, minha maior ambição é agregar valor ao mundo,<br> ser útil e contribuir para a construção de um mundo melhor.</em></p>
-        </div>
-      
-    
-        </section class="menu-skills">
-            <h2 class="title">Habilidades</h2>
-             <ul>
-                    <li><strong>JavaScript</strong></li>
-                    <li>HTML</li>
-                    <li>CSS</li>
-                    <li>Resiliente</li>
-                    <li>Autodidata</li>
-                </ul>
-        </section>
-    </main>  
-
-    <footer>
-        <div><h3 class="title">Contato</h3>
-        <div><button><a href="https://www.linkedin.com/in/igormm/" style="text-decoration:none" target=_blank>Linkedin</a></button>
-        <div><button><a  href="mailto:igor.emp@hotmail.com?subject=Hello%20again" style="text-decoration:none" target=_blank>E-mail</a></button>
-        <br><br><img src="https://i.pinimg.com/originals/f3/39/af/f339afd6cae98b4b926621f9aadc514b.gif" width="50px">
-        </footer>        
+  <main id="main">
+    <section id="header-section" href="">
+      <img id="photo" width="350px" src="/images/10.jpeg" alt="Homem sorrindo">
+      <nav id="menu"></nav>
+    </section>
+    <section id="div-container" href="">
+      <div class="" id="about-me">
+        <p>
+          Sou um sonhador, acredito no poder da lógica acompanhada de criatividade e visão.<br>
+          Tenho um sonho de fazer a minha parte em transformar a experiência.vida para uma <br>
+          realidade onde todos possam desfrutar com dignidade dessa eloquente jornada. //👨‍💻<br>
+        </p>
+      </div>
+      <ul class="list-group list-group-flush" id="skills">
+        <li class="list-group-item">{ Adobe Photoshop Cs6: Intermediário }</li>
+        <li class="list-group-item">{ JavaScript: 'Básico' }</li>
+        <li class="list-group-item">{ Shell: Intermediário }</li>
+        <li class="list-group-item">{ Flutter: 'Básico' }</li>
+        <li class="list-group-item">{ HTML: 'Básico' }</li>
+        <li class="list-group-item">{ 'CSS: Básico' }</li>
+        <li class="list-group-item">{ SQL: Básico }</li>
+      </ul>
+      <div id="education"></div>
+      <div id="experience"></div>
+      <div id="contact"></div>
+      <div id="info"></div>
+    </section>
+    <div id="image-container">
+      <img id="gif" src="https://camo.githubusercontent.com/c69f9514c67ba2fbbefc454cb974fd1f21b759ba7d7c3fae3395d2b67426587d/68747470733a2f2f692e696d6775722e636f6d2f71704642626d4f2e6769662f32303078313030" alt="">
+    </div>
+  </main>
+  <script src="src/script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
 </body>
-
 </html>
